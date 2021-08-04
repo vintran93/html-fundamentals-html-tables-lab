@@ -29,9 +29,7 @@ The first thing we need in order to create a table is to write opening and
 closing `<table>` tags.
 
 ```html
-<table>
-
-</table>
+<table></table>
 ```
 
 This tells our browser to interpret anything inside as part of the table. What
@@ -45,17 +43,17 @@ inside our `table` tags.
 
 It's important to note: order really matters when building a table in HTML!
 We're trying to display a two-dimensional table, but browsers interpret HTML _line
-by line_.  For this reason, HTML tables were designed so that there is no tag
-for _columns_, only _rows_.  If you were creating a table with 5 rows and 5
+by line_. For this reason, HTML tables were designed so that there is no tag
+for _columns_, only _rows_. If you were creating a table with 5 rows and 5
 columns, in designing the table, we would actually have to create 5 _rows_, each
-with 5 individual _cells_ inside.  When displayed, the cells in each row will
+with 5 individual _cells_ inside. When displayed, the cells in each row will
 line up to _look_ like columns.
 
 Table rows always come first. To make a row inside our table, we use the _table
 row_ tag, `<tr>`. So if we wanted to have four rows in our table, including a row of
 headers, setting up the rows it would look like this:
 
-```HTML
+```html
 <table>
   <tr></tr>
   <tr></tr>
@@ -78,7 +76,7 @@ the third, what the guest is 'Bringing' to the party.
 
 These headers need to go in the first row, so that may look something like:
 
-```HTML
+```html
 <table>
   <tr>
     <th>Name</th>
@@ -105,7 +103,7 @@ represents one table cell. So, for our party table, we can add in some names,
 phone numbers and items for guests to bring. An example row would look like the
 following:
 
-```HTML
+```html
 <tr>
   <td>Daniel</td>
   <td>845-282-4000</td>
@@ -119,7 +117,7 @@ corresponding `<th>` in the first row, it will show up in that column.
 Repeating this structure, if we wanted to include 3 guests for our party, our
 entire table would look like the following:
 
-```HTML
+```html
 <table>
   <tr>
     <th>Name</th>
@@ -164,7 +162,7 @@ To complete this task, follow the order of table creation we discussed earlier:
 1. Create a `table`, and place rows inside,
 2. Dedicate the first row to just headers
 3. Add in the data in the appropriate order so that each city name falls under the
-"City" column, each state is under "State", etc...
+   "City" column, each state is under "State", etc...
 
 Run `learn test` to test your work and see your progress. The tests also include the
 exact population numbers, so feel free to copy them from the errors!
@@ -176,6 +174,3 @@ into a table with rows and columns! It may seem counterintuitive at first to lis
 out row content separately, but with this, you can represent all sorts of data!
 
 [mpia]: https://en.wikipedia.org/wiki/List_of_most-followed_Instagram_accounts
-
-
-
